@@ -54,6 +54,7 @@
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
 //eventos teclado
+
     var onKeyDown= function(event){
         switch( event.KeyCode){
             case 38://frente
@@ -133,6 +134,7 @@
             gridHelperYZ.rotateOnWorldAxis ( z, THREE.Math.degToRad(90) );
              
 //araña
+
              geometria1= new THREE.SphereGeometry(1.5,5,5);
              geometria3= new THREE.SphereGeometry(1,5,5);
              
@@ -160,6 +162,7 @@ patai3= patai1.clone();
 		
 
   //patas 
+  
             patad1.applyMatrix( new THREE.Matrix4().makeScale(0.5,2,0.5) );
 			patad2 = patad1.clone();
 		    patad3 = patad1.clone();
